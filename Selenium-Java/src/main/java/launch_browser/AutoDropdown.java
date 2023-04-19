@@ -20,6 +20,8 @@ public class AutoDropdown
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 		
 		
+		
+		
 		driver.findElement(By.id("autosuggest")).sendKeys("ind");
 		
 		Thread.sleep(5000);

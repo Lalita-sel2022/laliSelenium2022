@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Listeners_Demo.TestListener"/>
+    <listener class-name="Listeners_Demo.RetryListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Listeners_Demo.NavigateAmazon">
+        <methods>
+          <include name="navigateURL"/>
+        </methods>
+      </class> <!-- Listeners_Demo.NavigateAmazon -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

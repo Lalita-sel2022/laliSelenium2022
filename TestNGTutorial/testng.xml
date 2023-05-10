@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+<parameter name="firstname" value="caderic"/>
+  
+  
+  <test thread-count="5" name="Personal Lone">
+    <classes>
+     <class name="Test.TestCase_01"/>
+  
+     <class name="Test.TestCase_02"/>
+     <class name="Test.TestCase_04">
+     <methods>
+     <include name="loginApiHomeLoan"/>
+     </methods>
+     </class>
+      
+    </classes>
+  </test>
+
+     <test thread-count="5" name="Car Lone">
+     <parameter name="lastname" value="cadii"/>
+    <classes>
+     <class name="Test.TestCase_03">
+     <methods>
+     <exclude name="mobile.*"/>
+     
+     </methods>
+    </class>
+    </classes>
+    </test>
+</suite> 
+
